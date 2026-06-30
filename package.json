@@ -1,0 +1,43 @@
+{
+  "name": "@sponsored-code/cli",
+  "version": "2.0.0",
+  "type": "module",
+  "description": "Get paid in USDC for the thinking-word in Claude Code. Non-invasive, on-chain. CLI + MCP server (scode mcp).",
+  "keywords": [
+    "claude-code",
+    "mcp",
+    "usdc",
+    "polygon",
+    "developer-earnings",
+    "ads"
+  ],
+  "license": "PolyForm-Shield-1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sponsored-code/cli.git"
+  },
+  "homepage": "https://sponsoredcode.com",
+  "bugs": "https://github.com/sponsored-code/cli/issues",
+  "bin": {
+    "scode": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "preuninstall": "node dist/cli.js off"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@noble/curves": "^1.9.7",
+    "@noble/hashes": "^1.8.0",
+    "update-notifier": "^7.0.0"
+  },
+  "devDependencies": {
+    "@sponsored-code/core": "^2.0.0",
+    "@types/update-notifier": "^6.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
